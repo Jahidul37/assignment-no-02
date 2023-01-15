@@ -141,8 +141,6 @@ Quick list of Our Features area
     margin: 10px 0;
 }
 
-.freature-img {}
-
 .freature-img img {
     width: 80%;
     height: 574px;
@@ -150,6 +148,8 @@ Quick list of Our Features area
 }
 
 .year {
+    position: relative;
+    z-index: 1;
     width: 100px;
     height: 39px;
     padding: 30px;
@@ -259,7 +259,20 @@ Media query part
         width: 100%;
         display: flex;
         flex-direction: column;
-        background-color: rgba(75, 11, 224, 0.1);
+
+    }
+
+    .header-area {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    .nav-area nav ul {
+        display: flex;
+        flex-direction: column;
     }
 
     .article-text-area {
